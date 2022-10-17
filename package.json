@@ -1,0 +1,78 @@
+{
+  "name": "xianzao-cli",
+  "version": "1.0.0",
+  "description": "项目初始化脚手架",
+  "scripts": {
+    "dev": "nodemon ./index.ts",
+    "tsc": "tsc",
+    "build": "rm -rf dist && tsc && ts-node build/index.ts",
+    "serve": "ts-node ./index.ts",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "postinstallmac": "git config core.hooksPath .husky && chmod 700 .husky/*",
+    "eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,js,tsx}\" --fix",
+    "commit": "git add . && git-cz"
+  },
+  "bin": {
+    "xianzao-cli": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xianzao/xianzao-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "xianzao"
+  ],
+  "author": "xianzao",
+  "license": "ISC",
+  "nodemonConfig": {
+    "ignore": [
+      "package.json"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/xianzao/xianzao-cli/issues"
+  },
+  "homepage": "https://github.com/xianzao/xianzao-cli#readme",
+  "dependencies": {
+    "cac": "^6.7.14",
+    "chalk": "^4.1.2",
+    "fs-extra": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.11.0",
+    "cross-spawn": "^7.0.3",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "minimist": "^1.2.7",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-angular": "^17.0.3",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.9.0",
+    "@commitlint/cz-commitlint": "^17.0.3",
+    "inquirer": "^8.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,jsx,tsx}": [
+      "npm run eslint"
+    ],
+    "*.{js,jsx,ts,tsx,md,html,css,lees,scss,sass}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}
