@@ -17,6 +17,7 @@ module.exports = {
     footer: '请选择要关闭的issue（可选）',
     confirmCommit: '确认要使用以上信息提交？（y/n）',
   },
+  allowCustomScopes: false,
   skip: ['body', 'footer'],
   subjectLimit: 72,
 };

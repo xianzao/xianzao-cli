@@ -18,6 +18,10 @@
 
 ## 使用方式
 
+1. 全局安装
+
+2. 局部安装
+
 ## NPM
 
 项目已自动更新至 NPM，请移步至[xianzao-cli](https://www.npmjs.com/package/xianzao-cli)
