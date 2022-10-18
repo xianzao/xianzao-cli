@@ -16,6 +16,8 @@
 - eslint + prettier 校验
 - husky 自动装载
 
-## 同步 NPM
+## 使用方式
 
-- xianzao-cli
+## NPM
+
+项目已同步至 NPM，请移步[xianzao-cli]()

@@ -1,8 +1,7 @@
 name: 发布npm
 on:
   push:
-    branches:
-      - master
+    branches: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,5 +20,5 @@ jobs:
       - run: cd ./dist && npm publish
 
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
