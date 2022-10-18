@@ -15,3 +15,7 @@
 - 提交前 commit 校验
 - eslint + prettier 校验
 - husky 自动装载
+
+## 同步 NPM
+
+- xianzao-cli
