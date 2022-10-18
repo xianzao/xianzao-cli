@@ -18,8 +18,6 @@
 
 ## 使用方式
 
-1
-
 ## NPM
 
 项目已自动更新至 NPM，请移步至[xianzao-cli](https://www.npmjs.com/package/xianzao-cli)
