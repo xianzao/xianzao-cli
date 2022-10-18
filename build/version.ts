@@ -6,6 +6,7 @@ import { getPath } from '../src/utils/path';
 import { debugInfo } from '../src/utils/debug';
 
 const versionInit = async () => {
+  console.log(minimist(process.argv.slice(2)).release);
   if (!minimist(process.argv.slice(2)).release) return false;
 
   const pkgJson = await getPackageJson();
