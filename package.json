@@ -1,11 +1,10 @@
 {
   "name": "xianzao-cli",
-  "version": "1.1.1",
+  "version": "1.0.0",
   "description": "项目初始化脚手架",
   "scripts": {
     "dev": "nodemon ./index.ts",
     "serve": "ts-node ./index.ts",
-    "version": "ts-node build/version.ts",
     "tsc": "tsc",
     "build": "rm -rf dist && tsc && ts-node build/index.ts"
   },
