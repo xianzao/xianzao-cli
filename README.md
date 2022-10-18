@@ -20,4 +20,4 @@
 
 ## NPM
 
-项目已同步至 NPM，请移步[xianzao-cli]()
+项目已自动更新至 NPM，请移步至[xianzao-cli]()
