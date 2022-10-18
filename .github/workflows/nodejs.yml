@@ -17,7 +17,6 @@ jobs:
         run: npm install
       - name: 构建
         run: npm run build
-      - run: cd ./dist && npm publish --access public
-
+      - run: cd ./dist && npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}

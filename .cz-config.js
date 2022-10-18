@@ -12,7 +12,6 @@ module.exports = {
   ],
   messages: {
     type: '请选择提交的类型；',
-    customScope: '请输入修改的范围（可选）',
     subject: '请简要描述提交（必填）',
     body: '请输入详细描述（可选）',
     footer: '请选择要关闭的issue（可选）',
