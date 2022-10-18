@@ -18,9 +18,19 @@
 
 ## 使用方式
 
-1. 全局安装
+局部安装
 
-2. 局部安装
+```BASH
+# 1. 项目中执行
+npm i xianzao-cli -D
+
+# 2. 在package.json中添加script
+"scripts": {
+  "xianzao-cli": "xianzao-cli",
+},
+
+# 3. 执行npm run xianzao-cli, 即会自动添加依赖
+```
 
 ## NPM
 
