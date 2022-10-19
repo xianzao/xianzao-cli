@@ -1,6 +1,6 @@
 {
   "name": "xianzao-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "项目初始化脚手架",
   "main": "dist/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "build": "rm -rf dist && tsc && ts-node build/index.ts",
     "update-version": "ts-node build/version.ts",
     "commit": "git add . && git-cz ",
-    "publish": "npm run update-version && git add . && git-cz && git push",
+    "publish": "ts-node build/version.ts && git add . && git-cz && git push",
     "prepare": "husky install",
     "release": "rm -rf dist && tsc && ts-node build/index.ts"
   },
