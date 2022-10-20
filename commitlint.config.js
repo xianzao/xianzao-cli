@@ -1,5 +1,4 @@
-
-module.exports={
+module.exports = {
   extends: ['@commitlint/config-angular'],
   parserPreset: {
     parserOpts: {
@@ -13,18 +12,7 @@ module.exports={
     'type-enum': [
       2,
       'always',
-      [
-        '📦build',
-        '👷ci',
-        '📝docs',
-        '🌟feat',
-        '🐛fix',
-        '🚀perf',
-        '🌠refactor',
-        '🔂revert',
-        '💎style',
-        '🚨test',
-      ],
+      ['📦build', '👷ci', '📝docs', '🌟feat', '🐛fix', '🚀perf', '🌠refactor', '🔂revert', '💎style', '🚨test'],
     ],
     'scope-empty': [2, 'never'],
     'subject-empty': [2, 'never'],
@@ -110,8 +98,7 @@ module.exports={
         description: '有什么突破性的变化吗?',
       },
       breakingBody: {
-        description:
-          '一个破坏性的变更提交需要一个主体。 请输入提交本身的更长的描述  ',
+        description: '一个破坏性的变更提交需要一个主体。 请输入提交本身的更长的描述  ',
       },
       breaking: {
         description: 'Describe the breaking changes',
@@ -128,4 +115,4 @@ module.exports={
       },
     },
   },
-}
+};
